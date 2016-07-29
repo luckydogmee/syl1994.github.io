@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	//设置fullpage
 	$('#main').fullpage({
-		sectionsColor:['rgb(255,0,0)','#4bbfc3','#7baabe','green'],
+		sectionsColor:['#c6f0fc','#4bbfc3','#7baabe','green'],
 		navigation:true,
 		navigationTooltips:['首页','个人信息','技能展示','工作经历'],
 		
