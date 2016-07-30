@@ -15,8 +15,14 @@
 .hd .inner .logo{
 	width: 30%;
 	height: 71px;
+	line-height: 71px;
+	font-size: 30px;
 	float: left;
 	margin-left: 20px;
+	font-family: "microsoft sans serif";
+}
+.hd .inner .logo:hover{
+	color: #909090;
 }
 .hd .inner nav{
 	float: right;
@@ -36,6 +42,49 @@
 .hd li a:hover{
 	
 	color:white;
+}
+
+.confirm{
+	height: 150px;
+	width: 300px;
+	margin-top: -75px;
+	margin-left: -150px;
+	top: 50%;
+	left: 50%;
+	z-index: 998;
+	position: absolute;
+	/*border: 1px solid red;*/
+	background: #ffffff;
+	box-shadow: 0px 0px 15px #999999;
+}
+.confirm .tips{
+	top: 50%;
+	left: 50%;
+	height: 50px;
+	width: 100px;
+	margin-left: -50px;
+	margin-top: -25px;
+	position: absolute;
+	text-align: center;
+	font-size: 22px;
+}
+.confirm .btn{
+	width: 300px;
+	height:25%;
+	position: absolute;
+	bottom: 0;
+	background: #FFFFF0;
+	border-top: 1px solid #CCCCCC !important;
+	border: none;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.confirm .btn:hover{
+	background: #66c2cf;
+	cursor: pointer;
+}
+.hide{
+	display: none;
 }
 .s1 .pic{
 	height: 200px;
@@ -127,4 +176,25 @@
 
 .s4{
 	background: url(../img/3.jpg) center;
+}
+
+
+@media only screen and (min-width: 800px) and (max-width: 12000px) {
+	.confirm{
+		width: 400px;
+		height: 200px;
+		margin-top: -100px;
+		margin-left: -200px;
+	}
+	.confirm .tips{
+		height: 50px;
+		width: 100px;
+		margin-left: -50px;
+		margin-top: -25px;
+		font-size: 26px;
+	}
+	.confirm .btn{
+		width: 400px;
+		font-size: 20px;
+	}
 }

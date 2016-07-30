@@ -16,6 +16,26 @@ $(document).ready(function(){
 		}
 	});
 	
+	//当点击博客和随笔的时候阻止默认事件并弹出待开发弹出框
+	$('.blog,.suibi').click(function(e){
+		$('.confirm').removeClass('hide');
+		$(document).click(function(){
+			if(!$('.confirm').hasClass('hide')){
+				$('.confirm').addClass('hide');
+				
+			}
+		})
+		//阻止事件冒泡，这个很重要
+		e.stopPropagation();
+	})
+	$('.confirm .btn').click(function(){
+		$('.confirm').addClass('hide');
+	})
+	
+		
+	
+		
+	
 	
 	
 	//当鼠标移动到头像上添加模糊效果
