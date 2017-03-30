@@ -1,200 +1,54 @@
-.hd{
-	width: 100%;
-	height: 71px;
-	background: rgba(255,255,255,0);
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 100;
-}
-.hd .inner{
-	max-width: 1900px;
-	height: 71px;
-	margin: 0 auto;
-}
-.hd .inner .logo{
-	width: 30%;
-	height: 71px;
-	line-height: 71px;
-	font-size: 30px;
-	float: left;
-	margin-left: 20px;
-	font-family: "microsoft sans serif";
-}
-.hd .inner .logo:hover{
-	color: #909090;
-}
-.hd .inner nav{
-	float: right;
-	width: 40%;
-	height: 71px;
-	line-height: 71px;
-}
-.hd .inner nav li{
-	float: left;
-	width: 25%;
-	text-align: center;
-	font-size: 20px;
-}
-.hd .inner nav li:hover{
-	background: #333333;
-}
-.hd li a:hover{
-	
-	color:white;
-}
+/*头部*/
+.head{width: 100%;height: 5rem;background: rgba(11,114,152,0);color: #FFFFFF;line-height: 5rem;top: 1rem;position: absolute;z-index: 500;}
+.head-container{margin: 0 auto;height: 100%;position: relative;}
+.logo{float: left;margin-left: 5%;height: 100%;font-size: 2.4rem;}
+nav{float: right;margin-right: 5%;width: 40%;height: 100%;}
+nav ul{height: 100%;}
+nav li{float: left;width: 25%;text-align: right;height: 100%;}
+.menu{position: absolute;right: 2rem;top: 0;width: 8rem;display: none;}
+.menu h3{width: 100%;height: 3rem; text-align: right; margin-bottom: 0.1rem;cursor: pointer;padding-right: 0.8rem;}
+.menu h3.on{background: rgba(0,0,0,0.6);}
+.menu-icon{float: right;margin-top: 0.8rem;}
+.h{width: 2rem;height: 0;border: 1px solid #FFFFFF;margin-bottom: 0.6rem;}
+.menu li{text-align: right;padding-right: 0.8rem;margin-bottom: 0.1rem; width: 100%;height: 3rem;line-height: 3rem;display: none;background: rgba(0,0,0,0.6);}
+nav a{display: block; text-align: center;position: relative;overflow: hidden;height: 4.6rem;line-height: 4.6rem;font-size: 1.8rem;margin-top:0.2rem;}
+.navLine{position: absolute;background: #e16204;}
+.line-top,.line-bottom{height: 2px;}
+.line-left,.line-right{width: 2px;}
+.line-top{top: 0;}
+.line-left{left: 0;}
+.line-bottom{bottom: 0;}
+.line-right{right: 0;}
 
-.confirm{
-	height: 150px;
-	width: 300px;
-	margin-top: -75px;
-	margin-left: -150px;
-	top: 50%;
-	left: 50%;
-	z-index: 998;
-	position: absolute;
-	/*border: 1px solid red;*/
-	background: #ffffff;
-	box-shadow: 0px 0px 15px #999999;
-}
-.confirm .tips{
-	top: 50%;
-	left: 50%;
-	height: 50px;
-	width: 100px;
-	margin-left: -50px;
-	margin-top: -25px;
-	position: absolute;
-	text-align: center;
-	font-size: 22px;
-}
-.confirm .btn{
-	width: 300px;
-	height:25%;
-	position: absolute;
-	bottom: 0;
-	background: #FFFFF0;
-	border-top: 1px solid #CCCCCC !important;
-	border: none;
-	font-size: 16px;
-	font-family: "微软雅黑";
-}
-.confirm .btn:hover{
-	background: #66c2cf;
-	cursor: pointer;
-}
-.hide{
-	display: none;
-}
-.s1 .pic{
-	height: 200px;
-	width: 200px;
-	border-radius: 50%;
-	background: url(../img/portrait1.jpg);
-	top: 50%;
-	left: 50%;
-	margin: 0 auto;
-	cursor: pointer;
-}
-.s1 .mohu{
-	background: rgba(0,0,0,0.5);
-	height:200px;
-	width: 200px;
-	border-radius: 50%;
-	overflow: hidden;
-	display: none;
-}
-.s1 .some-text{
-	text-align: center;
-}
-.s1 .some-text h3{
-	font-size: 20px;
-	margin: 15px;
-	font-family: "宋体";
-	display: none;
-}
-.s1 .some-text .hobs{
-	padding-top: 50px;
-}
-.s1{
-	background: url(../img/1.jpg) center;
-}
+/*确认框*/
+.confirm {height: 150px;width: 300px;margin-top: -75px;margin-left: -150px;top: 50%;left: 50%;z-index: 998;position: absolute;/*border: 1px solid red;*/background: #ffffff;box-shadow: 0px 0px 15px #999999;}
+.confirm .tips {top: 50%;left: 50%;height: 50px;width: 100px;margin-left: -50px;margin-top: -25px;position: absolute;text-align: center;font-size: 22px;}
+.confirm .btn {width: 300px;height: 25%;position: absolute;bottom: 0;background: #FFFFF0;border-top: 1px solid #CCCCCC !important;border: none;font-size: 16px;font-family: "微软雅黑";}
+.confirm .btn:hover {background: #66c2cf;cursor: pointer;}
+.hide {display: none;}
 
-.contain{
-	text-align: center;
-	margin: 0 auto;
-	top: 10%;
-	left: 50%;
-	font-size: 36px;
-	display: block;
-}
-.s2 .myinfo{
-	text-align: left;
-	height: 400px;
-	width: 1000px;
-	margin: 0 auto;
-	margin-top: 150px;
-}
-.s2 table{
-	width: 100%;
-	height: 100%;
-}
-.s2 td{
-	font-size:18px;
-	font-family: "宋体";
-}
-.s2 .pic img{
-	border-radius: 50%;
-}
-
-.s2{
-	background: url(../img/2.jpg) center;
-	text-align: center;
-}
-.s3{
-	background: url(../img/4.jpg) center;
-}
-.contain h2{
-	font-size: 20px;
-	margin-top: 20px;
-}
-.s3 .skill{
-	text-align: left;
-	height: 400px;
-	width: 510px;
-	margin: 0 auto;
-	margin-top: 150px;
-}
-.s3 .skill .some-text{
-	width: 100%;
-	height: 100%;
-}
-.s3 .skill .some-text p{
-	height: 12.5%;
-	font-size: 16px;
-}
-
-.s4{
-	background: url(../img/3.jpg) center;
-}
-
+/*第一页*/
+.s1 .pic {height: 200px;width: 200px;border-radius: 50%;background: url(../img/portrait1.jpg);top: 50%;left: 50%;margin: 0 auto;cursor: pointer;}
+.s1 .mohu {background: rgba(0, 0, 0, 0.5);height: 200px;width: 200px;border-radius: 50%;overflow: hidden;display: none;}
+.s1 .some-text {text-align: center;}
+.s1 .some-text h3 {font-size: 18px;margin: 15px;display: none;font-weight: 300;}
+.s1 .some-text .hobs {padding-top: 50px;}
+.s1 {background: url(../img/1.jpg) center;}
+.contain {text-align: center;margin: 0 auto;top: 10%;left: 50%;font-size: 36px;display: block;}
+.s2 .myinfo {text-align: left;height: 400px;width: 1000px;margin: 0 auto;margin-top: 150px;}
+.s2 table {width: 100%;height: 100%;}
+.s2 td {font-size: 18px;font-family: "宋体";}
+.s2 .pic img {border-radius: 50%;}
+.s2 {background: url(../img/2.jpg) center;text-align: center;}
+.s3 {background: url(../img/4.jpg) center;}
+.contain h2 {font-size: 20px;margin-top: 20px;}
+.s3 .skill {text-align: left;height: 400px;width: 510px;margin: 0 auto;margin-top: 150px;}
+.s3 .skill .some-text {width: 100%;height: 100%;}
+.s3 .skill .some-text p {height: 12.5%;font-size: 16px;}
+.s4 {background: url(../img/3.jpg) center;}
 
 @media only screen and (min-width: 800px) and (max-width: 12000px) {
-	.confirm{
-		width: 400px;
-		height: 200px;
-		margin-top: -100px;
-		margin-left: -200px;
-	}
-	.confirm .tips{
-		height: 50px;
-		width: 100px;
-		margin-left: -50px;
-		margin-top: -25px;
-		font-size: 26px;
-	}
-	.confirm .btn{
-		width: 400px;
-		font-size: 20px;
-	}
+	.confirm {width: 400px;height: 200px;margin-top: -100px;margin-left: -200px;}
+	.confirm .tips {height: 50px;width: 100px;margin-left: -50px;margin-top: -25px;font-size: 26px;}
+	.confirm .btn {width: 400px;font-size: 20px;}
 }
