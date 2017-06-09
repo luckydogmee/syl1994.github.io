@@ -18,17 +18,14 @@ $(document).ready(function(){
 	
 	//当点击博客和随笔的时候阻止默认事件并弹出待开发弹出框
 	$('.blog,.suibi').click(function(e){
-		$('.alert').removeClass('hide');
-		/*$(document).click(function(){
-			if(!$('.alert').hasClass('hide')){
-				$('.alert').addClass('hide');
-			}
-		})*/
-		//阻止事件冒泡，这个很重要
-		e.stopPropagation();
+//		$('.alert').removeClass('hide');
+//		//阻止事件冒泡，这个很重要
+//		e.stopPropagation();
+		UICtrl.alert('待开发')
 	})
-	$('.alert .btn').click(function(){
-		$('.alert').addClass('hide');
+	$('.alert-btn').live('click',function(){
+		$('.alert').remove();
+		
 	})
 	
 	//导航栏效果
