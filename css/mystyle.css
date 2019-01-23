@@ -40,10 +40,10 @@ nav a{display: block; text-align: center;position: relative;overflow: hidden;hei
 .s2 table {width: 100%;height: 100%;}
 .s2 td {font-size: 18px;font-family: "宋体";}
 .s2 .pic img {border-radius: 50%;}
-.s2 {background: url(../img/2.jpg) center;text-align: center;}
+.s2 {background: url(../img/two.png) center no-repeat;text-align: center;background-size: 100% 100%;}
 .s3 {background: url(../img/4.jpg) center;}
 .contain h2 {font-size: 20px;margin-top: 20px;}
-.s3 .skill {text-align: left;height: 400px;width: 510px;margin: 0 auto;margin-top: 150px;}
+.s3 .skill {text-align: left;height: 400px;width: 600px;margin: 0 auto;margin-top: 150px;}
 .s3 .skill .some-text {width: 100%;height: 100%;}
 .s3 .skill .some-text p {height: 12.5%;font-size: 16px;}
 .s4 {background: url(../img/3.jpg) center;}
