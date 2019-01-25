@@ -4,29 +4,7 @@ $(document).ready(function(){
 		sectionsColor:['#c6f0fc','#4bbfc3','#7baabe','green'],
 		navigation:true,
 		navigationTooltips:['首页','个人信息','技能展示','工作经历'],
-		
-		//当前显示不是page1则隐藏导航栏
-		afterLoad:function(auchorLink,index){
-			if(index==1){
-				$('.hd').fadeIn();
-			}
-			else{
-				$('.hd').fadeOut()
-			}
-		}
 	});
-	
-	//当点击博客和随笔的时候阻止默认事件并弹出待开发弹出框
-	$('.blog,.suibi').click(function(e){
-//		$('.alert').removeClass('hide');
-//		//阻止事件冒泡，这个很重要
-//		e.stopPropagation();
-		UICtrl.alert('待开发')
-	})
-	$('.alert-btn').live('click',function(){
-		$('.alert').remove();
-		
-	})
 	
 	//导航栏效果
 	 $(window).scroll(function(){
@@ -70,8 +48,6 @@ $(document).ready(function(){
                 animateTo: 0,
                 easing: $.easing.easeInOutExpo
             })
-//					$('#h1').css({'transform':'rotate(0deg)'})
-//					$('#h3').css({'transform':'rotate(0deg)'})
             setTimeout(function(){
                 $('#h1').animate({'marginTop':0});
                 $('#h2').animate({'marginTop':0})
@@ -105,8 +81,6 @@ $(document).ready(function(){
                 easing: $.easing.easeInOutExpo
             })
             $('#h2').css('margin-top','-0.8rem')
-//					$('#h1').css({'transform':'rotate(45deg)','margin-left':'1rem','margin-top':'0.4rem'})
-//					$('#h3').css({'transform':'rotate(-45deg)','margin-left':'1rem','margin-top':'0.8rem'})
         }
     })
 	$('nav a').hover(function(){
@@ -124,14 +98,11 @@ $(document).ready(function(){
     },function(){
         var width = $(this).parent().width();
         var height = $(this).height();
-        $('.line-top').stop(true,true).animate({'right':'-'+width},200);
-        $('.line-bottom').stop(true,true).animate({'right':width},200);
-        $('.line-left').stop(true,true).animate({'top':'-'+height},200);
-        $('.line-right').stop(true,true).animate({'top':height},200);
+        $('.line-top').stop(true,true).animate({'right':'-'+width},200).hide();
+        $('.line-bottom').stop(true,true).animate({'right':width},200).hide();
+        $('.line-left').stop(true,true).animate({'top':'-'+height},200).hide();
+        $('.line-right').stop(true,true).animate({'top':height},200).hide();
     })
-		
-	
-	
 	
 	//当鼠标移动到头像上添加模糊效果
 	$('.pic').hover(function(){
@@ -148,3 +119,7 @@ $(document).ready(function(){
 	}
 	jianjin('.some-text h3')	
 })
+
+function fixStyle(){
+    $('.navLine').hide()
+}
